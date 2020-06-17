@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Slim">
+    <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="twitter:image" content="http://themepixels.me/slim/img/slim-social.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="http://themepixels.me/slim">
+    <meta property="og:title" content="Slim">
+    <meta property="og:description" content="Premium Quality and Responsive UI for Dashboard.">
+
+    <meta property="og:image" content="http://themepixels.me/slim/img/slim-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/slim/img/slim-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Meta -->
+    <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="author" content="ThemePixels">
+
+    <title>Slim Responsive Bootstrap 4 Admin Template</title>
+
+    <!-- vendor css -->
+    <link href="~/Scripts/app/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Scripts/app/lib/Ionicons/css/ionicons.css" rel="stylesheet" />
+    <link href="~/Scripts/app/lib/chartist/css/chartist.css" rel="stylesheet" />
+    <link href="~/Scripts/app/lib/rickshaw/css/rickshaw.min.css" rel="stylesheet" />
+
+    <!-- Slim CSS -->
+
+    <link href="~/Scripts/app/css/slim.css" rel="stylesheet" />
+    <!---CBS-->
+    <link href="~/Theme/vendors/vectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" type="text/css" />
+
+    <!-- Toggles CSS -->
+    <link href="~/Theme/vendors/jquery-toggles/css/toggles.css" rel="stylesheet" type="text/css">
+    <link href="~/Theme/vendors/jquery-toggles/css/themes/toggles-light.css" rel="stylesheet" type="text/css">
+
+    <!-- Toastr CSS -->
+    <link href="~/Theme/vendors/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    @*<link href="~/Theme/dist/css/style.css" rel="stylesheet" type="text/css">*@
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 
+    <!-- Custom CSS -->
+    <link href="~/Content/datatable/datatables.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Plugins/datatable/css/dataTables.checkboxes.css" rel="stylesheet" />
+    <link href="~/Plugins/datatable/css/fixedColumns.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Plugins/bootstrap/css/bootstrap-select.css" rel="stylesheet" />
+
+    <link href="~/Plugins/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="~/Plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" />
+    <link href="~/Plugins/jquery-confirm/jquery-confirm.min.css" rel="stylesheet" />
+    <link href="~/Plugins/toastr/toastr.css" rel="stylesheet" />
+    <link href="~/Plugins/typeahead/typeahead.css" rel="stylesheet" />
+    <link href="~/content/loader.css" rel="stylesheet" />
+    <link href="~/Plugins/Chosen/chosen.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    
+</head>
+<body>
+
+    <div>
+        @Html.Partial("_TopNav")
+        @RenderBody()
+    </div>
+    @RenderSection("scripts", false)
+    <!-- jQuery -->
+    <script src="~/Scripts/jquery-3.4.1.js" type="text/javascript"></script>
+    <script src="~/Theme/vendors/jquery/dist/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Theme/vendors/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
+    <script src="~/Theme/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- Slimscroll JavaScript -->
+    <script src="~/Theme/dist/js/jquery.slimscroll.js" type="text/javascript"></script>
+
+    <!-- Fancy Dropdown JS -->
+    <script src="~/Theme/dist/js/dropdown-bootstrap-extended.js" type="text/javascript"></script>
+
+    <!-- FeatherIcons JavaScript -->
+    <script src="~/Theme/dist/js/feather.min.js"></script>
+
+    <!-- Toggles JavaScript -->
+    <script src="~/Theme/vendors/jquery-toggles/toggles.min.js"></script>
+    <script src="~/Theme/dist/js/toggle-data.js"></script>
+
+    <!-- Counter Animation JavaScript -->
+    <script src="~/Theme/vendors/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="~/Theme/vendors/jquery.counterup/jquery.counterup.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="~/Theme/vendors/raphael/raphael.min.js"></script>
+    <script src="~/Theme/vendors/morris.js/morris.min.js"></script>
+
+    <!-- EChartJS JavaScript -->
+    <script src="~/Theme/vendors/echarts/dist/echarts-en.min.js"></script>
+
+    <!-- Sparkline JavaScript -->
+    <script src="~/Theme/vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+
+    <!-- Vector Maps JavaScript -->
+    <script src="~/Theme/vendors/vectormap/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="~/Theme/vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="~/Theme/dist/js/vectormap-data.js"></script>
+
+    <!-- Owl JavaScript -->
+    <script src="~/Theme/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <!-- Toastr JS -->
+    <script src="~/Theme/vendors/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+
+    <!-- Init JavaScript -->
+    <script src="~/Theme/dist/js/init.js"></script>
+    <script src="~/Theme/dist/js/dashboard-data.js"></script>
+
+    <!-- DataTable JS -->
+    <script src="~/Scripts/datatable/datatables.min.js"></script>
+    <script src="~/Plugins/datatable/js/dataTables.checkboxes.min.js"></script>
+    <script src="~/Plugins/datatable/js/dataTables.fixedColumns.min.js"></script>
+    <script src="~/Scripts/jquery.dataTables.js"></script>
+
+    <script src="~/Plugins/bootstrap/js/bootstrap-select.min.js"></script>
+
+    <script src="~/Plugins/js/moment.js"></script>
+    <script src="~/Plugins/js/numeral.js"></script>
+    <script src="~/Plugins/fontawesome/js/all.min.js"></script>
+    <script src="~/Plugins/fullcalendar/fullcalendar.min.js"></script>
+    <script src="~/Plugins/jquery-confirm/jquery-confirm.min.js"></script>
+    <script src="~/Plugins/toastr/toastr.min.js"></script>
+    <script src="~/Plugins/typeahead/typeahead.bundle.js"></script>
+    <script src="~/Plugins/Chosen/chosen.jquery.min.js"></script>
+
+    
+</body>
+</html>

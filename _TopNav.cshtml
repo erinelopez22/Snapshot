@@ -1,0 +1,156 @@
+﻿
+
+<div class="slim-header" style="background-color:#01669a; border-color:#01669a">
+    <div class="container" style="background-color:#01669a; border-color:#01669a; margin-top:20px">
+        <div class="slim-header-left">
+           
+            
+                <div>
+
+                    <img src="~/HpLogo.jpg" style="width:300px;height:60px" />
+                </div>
+            <div class="row " style="margin-left:1px">
+                <span style="font-family:'IRON MAN OF WAR 2 NCV'; text-align:center; font-size:50px; color:white; margin-left:180px;">SNAPSHOT</span>
+            </div>
+                <h2 class="slim-logo"></h2>
+                <a href="" id="slimSidebarMenu" class="slim-sidebar-menu"><span></span></a>
+
+                @*<div class="search-box">
+                <input type="text" class="form-control" placeholder="Search">
+                <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+            </div>*@<!-- search-box -->
+            </div><!-- slim-header-left -->
+        <div class="slim-header-right">
+
+            <div class="dropdown dropdown-c">
+                <a href="#" class="logged-user" data-toggle="dropdown">
+
+                    <h6><label id="UserFname" style="color:white; margin-right:10px"></label><i class="fa fa-angle-down"></i></h6>
+                    
+                    
+                </a>
+                <label id="UserType" style="color:white; margin-right:10px; display:none"></label>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <nav class="nav">
+                        @*<a href="page-profile.html" class="nav-link"><i class="icon ion-person"></i> View Profile</a>
+                        <a href="page-edit-profile.html" class="nav-link"><i class="icon ion-compose"></i> Edit Profile</a>
+                        <a href="page-activity.html" class="nav-link"><i class="icon ion-ios-bolt"></i> Activity Log</a>
+                        <a href="page-settings.html" class="nav-link"><i class="icon ion-ios-gear"></i> Account Settings</a>*@
+                        <script language="JavaScript">
+                                function openwindow() {
+                                    var a = document.getElementById("UserType").innerHTML;
+
+                                    if (a == "1") { window.location.replace("/UserMain/Index"); }
+                                    else {
+                                        toastr.info("NOT ACCESSIBLE", "Notification")
+
+                                    }
+                                    //window.location.replace("/UserMain/Index");
+                                }
+                                function Logout() {
+                                    alert("LOG OUT!");
+                                    window.location.replace("/Login/Index");
+
+                                }
+                        </script>
+
+                        <a href="javascript:Logout()" class="nav-link" id="refff"><i class="icon ion-forward"></i> Sign Out</a>
+                         
+                    </nav>
+                </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+        </div><!-- header-right -->
+    </div><!-- container -->
+</div><!-- slim-header -->
+
+<div class="slim-navbar" style="background-color:#01669a">
+    <div class="container" >
+        <ul class="nav">
+            <li class="nav-item with-sub">
+                <a class="nav-link" href="#">
+                    <i class="icon ion-ios-folder-outline"></i>
+                    <span>SNAPSHOT</span>
+                </a>
+                <div class="sub-item" style="width:95%">
+                    <ul>
+                        <li>@*<i class="icon ion-ios-book-outline"><a href="~/Report/Index"><span>Report</span> </a></i></li>*@
+                            <a href="~/Report/Index" style="margin-left:30px">
+                                <i class="icon ion-ios-book-outline"></i>
+                                <span>Generate Report</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div><!-- sub-item -->
+            </li>
+            <li class=" nav-item with-sub success">
+                <a class="nav-link" href="#">
+                    <i class="icon ion-ios-person-outline"></i>
+                    <span>MAINTENANCE</span>
+                </a>
+                <div class="sub-item" style="width:95%">
+                    <ul>
+                        <li>
+                            <script language="JavaScript">
+
+
+                                     function openwindow()
+                                     {
+                                         var a = document.getElementById("UserType").innerHTML;
+                                         
+                                         if (a == "1") { window.location.replace("/UserMain/Index"); }
+                                         else {
+                                             toastr.info("NOT ACCESSIBLE", "Notification")
+                                             
+                                         }
+                                         //window.location.replace("/UserMain/Index");
+                                     }
+                                     function Logout() 
+                                     {
+                                         alert("LOG OUT!");
+                                          window.location.replace("/Login/Index"); 
+
+                                     }
+
+                            </script>
+                            @*<i class="icon ion-ios-book-outline"><a href="~/Report/Index"><span>Report</span> </a></i></li>*@
+                            <a href="javascript:openwindow()" style="margin-left:30px" id="Validation_">
+                                <i class="icon ion-ios-book-outline"></i>
+                                <span>For Approval</span>
+                            </a>
+                        </li>
+                        <li>
+                            @*<i class="icon ion-ios-book-outline"><a href="~/Report/Index"><span>Report</span> </a></i></li>*@
+                            <a href="~/ViewAllUser/Index" style="margin-left:30px">
+                                <i class="icon ion-ios-personadd-outline"></i>
+                                <span>View all Users</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            @*<i class="icon ion-ios-book-outline"><a href="~/Report/Index"><span>Report</span> </a></i></li>*@
+                            <a href="~/AddUser/Index" style="margin-left:30px">
+                                <i class="icon ion-ios-plus-outline"></i>
+                                <span>Add User</span>
+                            </a>
+                            
+                        </li>
+
+                </ul>
+            </div>
+            </li>
+
+        </ul>
+    </div><!-- container -->
+</div><!-- slim-navbar -->
+
+
+
+<div class="tooltip-inner" id="line-chart-tooltip" style="position: absolute; display: none; opacity: 0.8;"></div>
+
+@section scripts{
+
+ 
+<script src="~/Scripts/System/Usermaintenace/TopNav.js"></script>
+
+}

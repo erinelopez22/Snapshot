@@ -1,0 +1,76 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Login V15</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/Script2/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Script2/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Script2/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Script2/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Script2/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Script2/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Script2/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Script2/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Script2/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Script2/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/Script2/css/main.css">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+ 
+</head>
+<body>
+    <div class="preloader-it">
+        <div class="loader-pendulums">
+            <h6 style="color:rgba(50, 65, 72, 0.6);font-size: 12px;margin-top: 9px;margin-left: 6px;">Please wait...</h6>
+        </div>
+    </div>
+
+    <div class="account-pages"></div>
+    <div class="clearfix"></div>
+    <div class="wrapper-page">
+
+        @RenderBody()
+        <!-- end card-box-->
+
+        <div class="m-t-5">
+            <div class="text-center">
+                <p class="text-white"><a href="http://www.hi-precision.com.ph" style="color: white;" target="_blank" /> hi-precision diagnostics center inc. </p>
+                
+                    <p class="text-white">© 2019</p>
+                </div>
+        </div>
+        
+        
+</div>
+    @RenderSection("scripts", false)
+    <!--===============================================================================================-->
+    <script src="~/Script2/vendor/jquery/jquery-3.2.1.min.js"></script>
+  
+    <!--===============================================================================================-->
+    <script src="~/Script2/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Script2/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/Script2/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Script2/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Script2/vendor/daterangepicker/moment.min.js"></script>
+    <script src="~/Script2/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Script2/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Script2/js/main.js"></script>
+</body>
+</html>
